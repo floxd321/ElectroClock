@@ -7,8 +7,8 @@
 :root {
   --common-gap: calc(3vmin + 15px);
 
-  --fs-big: calc(9vmin + 26px);
-  --fs-medium: calc(5vmin + 15px);
+  --fs-big: calc(9vmin + 22px);
+  --fs-medium: calc(5vmin + 10px);
 
   --fw-bold: 950;
 }
