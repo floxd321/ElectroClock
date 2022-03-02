@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --common-gap: calc(3vmin + 15px);
+
+  --fs-big: calc(9vmin + 22px);
+  --fs-medium: calc(5vmin + 10px);
+
+  --fw-bold: 950;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  font-size: 14px;
+  font-family: "Poiret One", cursive;
+  color: #ffff;
+}
+
+.container {
+  background: rgb(102, 29, 29);
+  background: conic-gradient(
+    from 90deg at 25% -10%,
+    #ff4500,
+    #d3f340,
+    #7bee85,
+    #afeeee,
+    #7bee85
+  );
+  min-width: 100vw;
+  min-height: 100vh;
+  height: auto;
+  width: auto;
+  position: absolute;
+  display: flex;
+  gap: var(--common-gap);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.clock_holder {
+  font-size: var(--fs-big);
+  display: flex;
+  padding: 0.2em;
+  width: auto;
+  height: auto;
+  justify-content: center;
+  background-color: rgba(39, 40, 41, 0.1);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  font-weight: var(--fw-bold);
+  text-align: center;
+}
+
+.header_holder {
+  width: auto;
+  height: auto;
+  font-size: var(--fs-medium);
+  padding: 0.1em;
+  background-color: rgba(39, 40, 41, 0.1);
+  text-align: center;
+}
