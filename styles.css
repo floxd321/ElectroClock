@@ -55,6 +55,7 @@ body {
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
   font-weight: var(--fw-bold);
+  text-align: center;
 }
 
 .header_holder {
@@ -63,4 +64,5 @@ body {
   font-size: var(--fs-medium);
   padding: 0.1em;
   background-color: rgba(39, 40, 41, 0.1);
+  text-align: center;
 }
