@@ -1,25 +1,24 @@
-﻿function getData(){
+function getData(){
 
     var curent_date = new Date();
-    var seconds = String(curent_date.getSeconds());
-    var hours = String(curent_date.getHours());
-    var minutes = String(curent_date.getMinutes());
-    var int_day = String(curent_date.getDay());
+    // array with curent time info (sec, min, hours etc.)
+    var time_data = [String(curent_date.getSeconds()), String(curent_date.getMinutes()), String(curent_date.getHours()), String(curent_date.getDay())];;
     var week_days = ["Воскресенье", "Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота"];
-    var day = week_days[int_day];
+    var day = week_days[time_data[3]];
 
-    if (hours.length < 2){
-        hours + "0" + hours;
-    }
-    if (seconds.length < 2){
-        seconds = "0" + seconds;
-    }
-    if (minutes.length < 2){
-        minutes = "0" + minutes;
+    if (time_data[2].length < 2){
+        time_data[2] = "0" + time_data[2];
     }
 
-    document.getElementById("clock_time").innerHTML = `${day} ${hours}:${minutes}:${seconds}`;
+    if (time_data[1].length < 2){
+        time_data[1] = "0" + time_data[1];
+    }
 
+    if (time_data[0].length < 2){
+        time_data[0] = "0" + time_data[0];
+    }
+
+    document.getElementById("clock_time").innerHTML = `${day} ${time_data[2]}:${time_data[1]}:${time_data[0]}`;
 }
 
 getData();
